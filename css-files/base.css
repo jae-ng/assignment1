@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+.logo{
+    margin-right: auto;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: 0.4s;
+    color: black;
+    font-weight: bold;
+    font-family: "Evo 2", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+} 
+.nav_links li a:hover{
+    color: rgba(58, 61, 61, 0.8);
+}
+.cta{
+    color: white;
+    text-decoration: none;
+}
+button{
+    font-family: "Evo 2", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+    padding: 9px 25px;
+    background-color: rgb(66, 69, 70);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:0.4s; 
+    margin-left: 50px;
+}
+button:hover{
+    background-color: rgba(58, 61, 61, 0.8)
+}
+.banner{
+    display: flex;
+    max-width: auto;
+    justify-content: center;
+    background-color:rgb(255, 222, 89);
+}
