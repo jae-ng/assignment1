@@ -106,10 +106,17 @@ button:hover{
     margin-bottom: 60px;
 }
 
+.main-content {
+    display: flex;
+    max-width: 1400px;
+    padding: 0 40px;
+    margin: auto;
+}
+
 .about-us{
     font-family: "Didact Gothic";
-    width: 500px;
-    margin-left: 20px;
+    width: 50%;
+    padding: 0 30px;
 }
 
 .about-us p{
@@ -363,6 +370,14 @@ button:hover{
 .star-rating label:active::before{
     transform:scale(1.1);
 }
+
+@media only screen and (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .about-us {width: 100%; margin-top: 30px;}
+  }
 
 @media only screen and (max-width: 600px) {
     .logo{width: 150px;}
