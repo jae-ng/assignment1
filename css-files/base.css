@@ -48,9 +48,7 @@ header{
 .cta{
     color: white;
     text-decoration: none;
-}
 
-button{
     font-family: "Evo 2", sans-serif;
     font-weight: bold;
     font-size: 16px;
@@ -70,7 +68,6 @@ button:hover{
 
 .banner{
     display: flex;
-    max-width: auto;
     justify-content: center;
     background-color:rgb(255, 222, 89);
 }
@@ -138,7 +135,6 @@ button:hover{
 
 .swiper img{
     width: 700px;
-    min-width: none;
 }
 
 .swiper .swiper-button-next, .swiper .swiper-button-prev {
@@ -307,7 +303,7 @@ button:hover{
     margin-bottom: 60px;
 }
 
-.contacts h1{
+.contacts h2{
     font-size: 35px;
     text-align: center;
     font-weight: bold;
