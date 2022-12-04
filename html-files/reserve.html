@@ -30,52 +30,40 @@
         <h1>Reserve A Table</h1>
     </div>
 
-    <form onsubmit = "handleLogin(event)">
-        <div>
-            <label class = "label" for = "Name"> 
-                Name:
+    <div class="form-container">
+        <form class="reserve-form" onsubmit = "handleLogin(event)">
 
-                <input name = "name" type = "text" placeholder = "Enter Name" id = "Name" required>
-            </label>
-        </div>
-        <br>
-        <div>
-            <label class = "label" for = "Contact"> 
-                Contact:
+            <div>
+                <label class = "label" for = "Name"> Name:</label>
+                <input name = "name" type = "text" placeholder = "Enter Name" id = "Name" required class="full-width">
+            </div>
+            <br>
+            <div>
+                <label class = "label" for = "Contact"> Contact:</label>
+                <input name = "contact" type = "tel" placeholder = "Enter Contact" id = "Contact" required class="full-width">
+            </div>
+            <br>
+            <div>
+                <label class = "label" for = "Pax">Pax:</label>
+                <input type = "number" name = "pax" id = "Pax" required class="half-width">
+            </div>
 
-                <input name = "contact" type = "tel" placeholder = "Enter Contact" id = "Contact" required>
-            </label>
-        </div>
-        <br>
-        <div>
-            <label class = "label" for = "Pax">
-                Pax:
-
-                <input type = "number" name = "pax" id = "Pax" required>
-            </label>
-        </div>
-
-        <br>
-        <div>
-            <label class = label for = "Date">
-                Date:
-                
+            <br>
+            <div>
+                <label class = label for = "Date"> Date:</label>
                 <input type = "date" id = "Date" name = "date" required>
-            </label>
-        </div>
-        <br>
-        <div>
-            <label for = "Time" class = "label">
-                Time:
-                
+            </div>
+            <br>
+            <div>
+                <label for = "Time" class = "label">Time:</label>
                 <input type = "time" name = "time" id = "Time" required>
-            </label>
-        </div>
-        <br>
-        <div>
-            <input class="sub" type="submit" value="Submit">
-        </div>
-    </form>
+            </div>
+            <br>
+            <div>
+                <button class="sub" type="submit">Submit</button>   
+            </div>
+        </form>
+    </div>
     
     <script src="../js-files/reserve.js"></script>
     
