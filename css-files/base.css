@@ -138,6 +138,7 @@ button:hover{
 
 .swiper img{
     width: 700px;
+    min-width: none;
 }
 
 .swiper .swiper-button-next, .swiper .swiper-button-prev {
@@ -159,20 +160,15 @@ button:hover{
 /*------------------------------------------------------------------------------------------------------- menu ------------------------------------------------------------------------------------------------ */
 
 .flex-container{
-    flex-basis: auto;
-    display: flex;
-    flex-flow:column wrap;
-    flex-direction: row;
-    
+    display: flex;    
     justify-content: space-between;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 60px;
+    margin: 0 auto 60px;
+    max-width: 1600px;
 }
 
 .flex-container img{
-    margin-top:150px;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     border-radius: 20px;
     transition:all 0.4s;
 }
@@ -212,6 +208,18 @@ button:hover{
     font-family: "Didact Gothic", sans-serif;
     text-align: center;
     color: black;
+}
+
+.menu-container{
+    padding: 0 30px;
+    min-width: 500px;
+    margin-bottom: 40px;
+}
+
+.menu-image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .money{
@@ -370,6 +378,20 @@ button:hover{
 .star-rating label:active::before{
     transform:scale(1.1);
 }
+
+@media only screen and (max-width: 1240px) {
+    .flex-container{
+        flex-direction: column;
+    }
+    .menu-image-container{
+        text-align: center;
+        display: block;
+    }
+    
+    .flex-container img{
+        margin: 20px;
+    }
+  }
 
 @media only screen and (max-width: 1024px) {
     .main-content {
