@@ -31,5 +31,53 @@
         <h1>Reserve A Table</h1>
     </div>
 
+    <form onsubmit = "handleLogin(event)">
+
+        <div>
+            <label class = "label" for = "Name"> 
+                Name:
+                
+                <input name = "name" type = "text" placeholder = "Enter Name" id = "Name" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label class = "label" for = "Contact"> 
+                Contact:
+
+                <input name = "contact" type = "tel" placeholder = "Enter Contact" id = "Contact" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label class = "label" for = "Pax">
+                Pax:
+
+                <input type = "number" name = "pax" id = "Pax" required>
+            </label>
+        </div>
+
+        <br>
+        <div>
+            <label class = label for = "Date">
+                Date:
+                
+                <input type = "date" id = "Date" name = "date" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for = "Time" class = "label">
+                Time:
+                
+                <input type = "time" name = "time" id = "Time" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <input class="sub" type="submit" value="Submit">
+        </div>
+    </form>
+
 </body>
 </html>
